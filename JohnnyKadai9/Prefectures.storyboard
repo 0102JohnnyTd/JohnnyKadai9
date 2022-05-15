@@ -60,7 +60,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zir-cg-OpV">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="dyh-YV-2Uo"/>
+                        <barButtonItem key="leftBarButtonItem" title="閉じる" id="dyh-YV-2Uo" userLabel="Close"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
