@@ -17,31 +17,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Yuu-2G-7Av">
-                                <rect key="frame" x="0.0" y="88" width="414" height="272"/>
+                                <rect key="frame" x="16" y="104" width="382" height="272"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hid-OW-Fbp" userLabel="Tokyo">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="38"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="38"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="東京都">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7V-sa-VFN" userLabel="Kanagawa">
-                                        <rect key="frame" x="0.0" y="78" width="414" height="38"/>
+                                        <rect key="frame" x="0.0" y="78" width="382" height="38"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="神奈川県">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfQ-J3-Lbu" userLabel="Saitama">
-                                        <rect key="frame" x="0.0" y="156" width="414" height="38"/>
+                                        <rect key="frame" x="0.0" y="156" width="382" height="38"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="埼玉県">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84X-0z-U7E" userLabel="Chiba">
-                                        <rect key="frame" x="0.0" y="234" width="414" height="38"/>
+                                        <rect key="frame" x="0.0" y="234" width="382" height="38"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="千葉県">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -53,10 +53,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Yuu-2G-7Av" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="OXq-aY-90r"/>
-                            <constraint firstItem="Yuu-2G-7Av" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="VwW-RY-dvV"/>
-                            <constraint firstItem="Yuu-2G-7Av" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" priority="249" id="qPh-kr-tEg"/>
-                            <constraint firstItem="Yuu-2G-7Av" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="zbV-T6-QTR"/>
+                            <constraint firstItem="Yuu-2G-7Av" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="OXq-aY-90r"/>
+                            <constraint firstItem="Yuu-2G-7Av" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="VwW-RY-dvV"/>
+                            <constraint firstItem="Yuu-2G-7Av" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" priority="249" constant="16" id="qPh-kr-tEg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Yuu-2G-7Av" secondAttribute="trailing" constant="16" id="zbV-T6-QTR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zir-cg-OpV">
