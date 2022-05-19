@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C2373142835AF0D00A9A40C /* PrefecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2373132835AF0D00A9A40C /* PrefecturesViewController.swift */; };
+		1C2373162835B1F900A9A40C /* CustomUIButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2373152835B1F900A9A40C /* CustomUIButtonDelegate.swift */; };
 		1CC8B82C282E967600A028D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8B82B282E967600A028D2 /* AppDelegate.swift */; };
 		1CC8B82E282E967600A028D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8B82D282E967600A028D2 /* SceneDelegate.swift */; };
 		1CC8B830282E967600A028D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8B82F282E967600A028D2 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		1C2373132835AF0D00A9A40C /* PrefecturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefecturesViewController.swift; sourceTree = "<group>"; };
+		1C2373152835B1F900A9A40C /* CustomUIButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButtonDelegate.swift; sourceTree = "<group>"; };
 		1CC8B828282E967600A028D2 /* JohnnyKadai9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JohnnyKadai9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC8B82B282E967600A028D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CC8B82D282E967600A028D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,10 +64,11 @@
 			children = (
 				1CC8B82B282E967600A028D2 /* AppDelegate.swift */,
 				1CC8B82D282E967600A028D2 /* SceneDelegate.swift */,
+				1C2373152835B1F900A9A40C /* CustomUIButtonDelegate.swift */,
 				1CC8B82F282E967600A028D2 /* ViewController.swift */,
 				1CC8B831282E967600A028D2 /* Main.storyboard */,
-				1CC8B83F282E97DE00A028D2 /* Prefectures.storyboard */,
 				1C2373132835AF0D00A9A40C /* PrefecturesViewController.swift */,
+				1CC8B83F282E97DE00A028D2 /* Prefectures.storyboard */,
 				1CC8B834282E967900A028D2 /* Assets.xcassets */,
 				1CC8B836282E967900A028D2 /* LaunchScreen.storyboard */,
 				1CC8B839282E967900A028D2 /* Info.plist */,
@@ -147,6 +150,7 @@
 			files = (
 				1CC8B830282E967600A028D2 /* ViewController.swift in Sources */,
 				1C2373142835AF0D00A9A40C /* PrefecturesViewController.swift in Sources */,
+				1C2373162835B1F900A9A40C /* CustomUIButtonDelegate.swift in Sources */,
 				1CC8B82C282E967600A028D2 /* AppDelegate.swift in Sources */,
 				1CC8B82E282E967600A028D2 /* SceneDelegate.swift in Sources */,
 			);
