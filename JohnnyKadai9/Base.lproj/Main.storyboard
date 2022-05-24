@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JohnnyKadai9" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="JohnnyKadai9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="kUe-OI-vH7" kind="presentation" id="thx-w8-S4K"/>
+                                            <segue destination="kUe-OI-vH7" kind="show" identifier="segueId" id="thx-w8-S4K"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -67,7 +67,9 @@
         <!--Prefectures-->
         <scene sceneID="L3U-EY-T7X">
             <objects>
-                <viewControllerPlaceholder storyboardName="Prefectures" id="kUe-OI-vH7" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Prefectures" id="kUe-OI-vH7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pTL-ji-f6a"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0r-mr-v6V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2543" y="-46"/>

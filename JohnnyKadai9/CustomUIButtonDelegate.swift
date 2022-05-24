@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-protocol CustomUIButtonDelegate {
-    func savePrefecturesLabel(button: UIButton)
+protocol CustomUIButtonDelegate: AnyObject {
+    func savePrefecturesLabel(prefecturesData: String)
 }
