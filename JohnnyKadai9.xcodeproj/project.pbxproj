@@ -16,7 +16,6 @@
 		1CC8B835282E967900A028D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC8B834282E967900A028D2 /* Assets.xcassets */; };
 		1CC8B838282E967900A028D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC8B836282E967900A028D2 /* LaunchScreen.storyboard */; };
 		1CC8B840282E97DE00A028D2 /* Prefectures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC8B83F282E97DE00A028D2 /* Prefectures.storyboard */; };
-		1CDF0D84284755580008CEFF /* ChibaLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF0D83284755580008CEFF /* ChibaLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		1CC8B837282E967900A028D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CC8B839282E967900A028D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CC8B83F282E97DE00A028D2 /* Prefectures.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Prefectures.storyboard; sourceTree = "<group>"; };
-		1CDF0D83284755580008CEFF /* ChibaLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChibaLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				1CC8B82D282E967600A028D2 /* SceneDelegate.swift */,
 				1C2373152835B1F900A9A40C /* CustomUIButtonDelegate.swift */,
 				1CC8B82F282E967600A028D2 /* ViewController.swift */,
-				1CDF0D83284755580008CEFF /* ChibaLabel.swift */,
 				1CC8B831282E967600A028D2 /* Main.storyboard */,
 				1C2373132835AF0D00A9A40C /* PrefecturesViewController.swift */,
 				1CC8B83F282E97DE00A028D2 /* Prefectures.storyboard */,
@@ -152,7 +149,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CC8B830282E967600A028D2 /* ViewController.swift in Sources */,
-				1CDF0D84284755580008CEFF /* ChibaLabel.swift in Sources */,
 				1C2373142835AF0D00A9A40C /* PrefecturesViewController.swift in Sources */,
 				1C2373162835B1F900A9A40C /* CustomUIButtonDelegate.swift in Sources */,
 				1CC8B82C282E967600A028D2 /* AppDelegate.swift in Sources */,
