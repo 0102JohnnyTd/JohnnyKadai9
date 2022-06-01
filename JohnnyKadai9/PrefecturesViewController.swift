@@ -26,10 +26,27 @@ class PrefecturesViewController: UIViewController {
         dismiss(animated: true)
     }
 
+    @IBOutlet weak var chibaLabelButton: UIButton!
+    @IBAction func passChibaData(_ sender: Any) {
+        chibaLabel.saveData(prefectureData: chibaLabelButton.titleLabel?.text ?? "取得エラーです")
+        dismiss(animated: true)
+    }
+
     var delegate: CustomUIButtonDelegate?
     var completion: ((String) -> Void)?
+    private let chibaLabel = ChibaLabel.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
+
+extension PrefecturesViewController {
+    override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+        super.dismiss(animated: flag, completion: completion)
+        guard let unwrappedPresentationController = presentationController else {
+            return
+        }
+        presentationController?.delegate?.presentationControllerDidDismiss?(unwrappedPresentationController)
     }
 }

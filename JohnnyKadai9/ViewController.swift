@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     private let segueIdentifier = "segueId"
+    private let chibaLabel = ChibaLabel.shared
     @IBOutlet weak var prefectureLabel: UILabel!
 
     override func viewDidLoad() {
@@ -26,7 +27,11 @@ class ViewController: UIViewController {
                 }
             prefecturesViewController.delegate = self
             prefecturesViewController.completion =  {  self.prefectureLabel.text = $0  }
+            prefecturesViewController.presentationController?.delegate = self
             }
+    }
+    func loadPrefectureData() {
+        prefectureLabel.text = chibaLabel.data
     }
 }
 
@@ -34,5 +39,11 @@ extension ViewController: CustomUIButtonDelegate {
     func savePrefecturesLabel(prefecturesData: String) {
 //        print("delegateメソッドが実行された")
         prefectureLabel.text = prefecturesData
+    }
+}
+
+extension ViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        loadPrefectureData()
     }
 }
