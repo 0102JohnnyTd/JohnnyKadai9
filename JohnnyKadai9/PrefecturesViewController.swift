@@ -25,8 +25,4 @@ class PrefecturesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    deinit {
-        print("deinitが呼ばれた")
-    }
 }

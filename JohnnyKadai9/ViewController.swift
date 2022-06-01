@@ -16,14 +16,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-//    var nextController: UINavigationController?
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueIdentifier {
-//            nextController
+
             let navigationController = segue.destination as! UINavigationController
             guard let prefecturesViewController = navigationController.viewControllers[0] as? PrefecturesViewController else {
-                    print("NavigationControllerを取得できませんでした。")
+                    print("prefecturesViewControllerを取得できませんでした。")
                     return
                 }
             prefecturesViewController.delegate = self   
