@@ -38,8 +38,4 @@ final class PrefecturesViewController: UIViewController {
 
     weak var delegate: CustomUIButtonDelegate?
     var completion: ((String) -> Void)?
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }

@@ -11,10 +11,6 @@ final class ViewController: UIViewController {
     private let segueIdentifier = "segueId"
     @IBOutlet private weak var prefectureLabel: UILabel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueIdentifier {
             let navigationController = segue.destination as! UINavigationController
