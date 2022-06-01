@@ -72,7 +72,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zir-cg-OpV">
-                        <barButtonItem key="leftBarButtonItem" title="閉じる" id="dyh-YV-2Uo" userLabel="Close"/>
+                        <barButtonItem key="leftBarButtonItem" title="閉じる" id="dyh-YV-2Uo" userLabel="Close">
+                            <connections>
+                                <action selector="quit:" destination="Y6W-OH-hqX" id="rxz-P9-loB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="chibaLabelButton" destination="84X-0z-U7E" id="lFD-dZ-mG9"/>

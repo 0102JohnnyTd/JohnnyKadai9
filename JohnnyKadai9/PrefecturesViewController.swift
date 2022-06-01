@@ -32,6 +32,10 @@ final class PrefecturesViewController: UIViewController {
         dismiss(animated: true)
     }
 
+    @IBAction private func quit(_ sender: Any) {
+        dismiss(animated: true)
+    }
+
     weak var delegate: CustomUIButtonDelegate?
     var completion: ((String) -> Void)?
 
