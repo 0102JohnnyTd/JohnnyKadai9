@@ -7,10 +7,9 @@
 
 import UIKit
 
-
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     private let segueIdentifier = "segueId"
-    @IBOutlet weak var prefectureLabel: UILabel!
+    @IBOutlet private weak var prefectureLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,14 +17,13 @@ class ViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueIdentifier {
-
             let navigationController = segue.destination as! UINavigationController
             guard let prefecturesViewController = navigationController.viewControllers[0] as? PrefecturesViewController else {
                     print("prefecturesViewControllerを取得できませんでした。")
                     return
                 }
             prefecturesViewController.delegate = self
-            prefecturesViewController.completion =  { self.prefectureLabel.text = $0 }
+            prefecturesViewController.completion = { self.prefectureLabel.text = $0 }
             }
     }
 }
