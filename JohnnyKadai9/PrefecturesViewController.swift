@@ -9,6 +9,10 @@ import UIKit
 
 
 final class PrefecturesViewController: UIViewController {
+    private let getError = "取得エラーです"
+    weak var delegate: CustomUIButtonDelegate?
+    var completion: ((String) -> Void)?
+
     @IBOutlet private weak var tokyoLabelButton: UIButton!
     @IBAction private func passTokyoData(_ sender: Any) {
         delegate?.savePrefecturesLabel(prefecturesData: tokyoLabelButton.titleLabel?.text ?? getError)
@@ -36,9 +40,4 @@ final class PrefecturesViewController: UIViewController {
     @IBAction private func quit(_ sender: Any) {
         dismiss(animated: true)
     }
-
-    private let getError = "取得エラーです"
-
-    weak var delegate: CustomUIButtonDelegate?
-    var completion: ((String) -> Void)?
 }
