@@ -9,13 +9,14 @@ import UIKit
 
 final class ViewController: UIViewController {
     private let segueIdentifier = "segueId"
+    private let errorMessage = "prefecturesViewControllerを取得できませんでした。"
     @IBOutlet private weak var prefectureLabel: UILabel!
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueIdentifier {
             let navigationController = segue.destination as! UINavigationController
             guard let prefecturesViewController = navigationController.viewControllers[0] as? PrefecturesViewController else {
-                    print("prefecturesViewControllerを取得できませんでした。")
+                    print(errorMessage)
                     return
                 }
             prefecturesViewController.delegate = self
