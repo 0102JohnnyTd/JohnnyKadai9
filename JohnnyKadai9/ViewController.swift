@@ -24,7 +24,8 @@ class ViewController: UIViewController {
                     print("prefecturesViewControllerを取得できませんでした。")
                     return
                 }
-            prefecturesViewController.delegate = self   
+            prefecturesViewController.delegate = self
+            prefecturesViewController.completion =  {  self.prefectureLabel.text = $0  }
             }
     }
 }
