@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a17-cV-bNr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a17-cV-bNr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,7 +26,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="passTokyoLabel:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GWh-MF-2li"/>
+                                            <action selector="passTokyoData:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fkp-ZQ-rqP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7V-sa-VFN" userLabel="Kanagawa">
@@ -45,6 +45,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="埼玉県">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="passSaitamaData:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6tK-as-u3q"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84X-0z-U7E" userLabel="Chiba">
                                         <rect key="frame" x="0.0" y="234" width="382" height="38"/>
@@ -70,6 +73,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="kanagawaLabelButton" destination="Y7V-sa-VFN" id="eLc-cW-4v9"/>
+                        <outlet property="saitamaLabelButton" destination="pfQ-J3-Lbu" id="y9n-04-ciA"/>
                         <outlet property="tokyoLabelButton" destination="hid-OW-Fbp" id="gbw-Z5-ofv"/>
                     </connections>
                 </viewController>
