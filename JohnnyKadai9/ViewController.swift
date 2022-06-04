@@ -9,7 +9,6 @@ import UIKit
 
 final class ViewController: UIViewController {
     private let segueIdentifier = "segueId"
-    private let errorMessage = "prefecturesViewControllerを取得できませんでした。"
     @IBOutlet private weak var prefectureLabel: UILabel!
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

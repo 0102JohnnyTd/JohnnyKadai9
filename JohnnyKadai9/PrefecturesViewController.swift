@@ -9,7 +9,6 @@ import UIKit
 
 
 final class PrefecturesViewController: UIViewController {
-    private let getError = "取得エラーです"
     weak var delegate: PrefecturesViewControllerDelegate?
     var completion: ((String) -> Void)?
 
