@@ -25,7 +25,7 @@ final class ViewController: UIViewController {
     }
 }
 
-extension ViewController: CustomUIButtonDelegate {
+extension ViewController: PrefecturesViewControllerDelegate {
     func savePrefecturesLabel(prefecturesData: String) {
 //        print("delegateメソッドが実行された")
         prefectureLabel.text = prefecturesData

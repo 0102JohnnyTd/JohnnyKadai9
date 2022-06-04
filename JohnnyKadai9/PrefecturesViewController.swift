@@ -10,7 +10,7 @@ import UIKit
 
 final class PrefecturesViewController: UIViewController {
     private let getError = "取得エラーです"
-    weak var delegate: CustomUIButtonDelegate?
+    weak var delegate: PrefecturesViewControllerDelegate?
     var completion: ((String) -> Void)?
 
     @IBOutlet private weak var tokyoLabelButton: UIButton!
