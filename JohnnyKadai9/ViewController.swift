@@ -15,10 +15,7 @@ final class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueIdentifier {
             let navigationController = segue.destination as! UINavigationController
-            guard let prefecturesViewController = navigationController.viewControllers[0] as? PrefecturesViewController else {
-                    print(errorMessage)
-                    return
-                }
+            let prefecturesViewController = navigationController.viewControllers[0] as! PrefecturesViewController
             prefecturesViewController.delegate = self
             prefecturesViewController.completion = { self.prefectureLabel.text = $0 }
             }
